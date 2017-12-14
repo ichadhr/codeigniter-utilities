@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-\$this->session->all_userdata();
+\$this->session->userdata();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>cisession_all_userdata</tabTrigger>
