@@ -1,0 +1,24 @@
+<snippet>
+    <content><![CDATA[
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+class ${1:${TM_FILENAME/(.+)\..+|.*/\u$1/:LibraryName}}
+{
+
+    ${4:${5:public} ${6:\$variable};}
+
+    public function __construct($7)
+    {
+
+        $0
+
+    }
+
+}
+
+/* End of file $TM_FILENAME */
+/* Location: ./${TM_FILEPATH/.+((?:application).+)/$1/:application/libraries/${1/(.+)/\l$1.php/}} */
+]]></content>
+    <tabTrigger>cilibraries</tabTrigger>
+    <description>CodeIgniter Libraries</description>
+</snippet>

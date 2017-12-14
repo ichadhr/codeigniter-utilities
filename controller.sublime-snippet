@@ -2,7 +2,7 @@
 	<content><![CDATA[
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class ${1:ControllerName} extends ${2:CI}_Controller {
+class ${1:${TM_FILENAME/(.+)\..+|.*/\u$1/:ControllerName}} extends ${2:CI}_Controller {
 
 	public function __construct()
 	{
@@ -17,7 +17,7 @@ class ${1:ControllerName} extends ${2:CI}_Controller {
 }
 
 /* End of file $TM_FILENAME */
-/* Location: ./application/controllers/$TM_FILENAME */
+/* Location: ./${TM_FILEPATH/.+((?:application).+)/$1/:application/controllers/${1/(.+)/\l$1.php/}} */
 ]]></content>
 	<tabTrigger>cicontroller</tabTrigger>
 	<description>CodeIgniter Controller</description>
